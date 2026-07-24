@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from buildverze.com/login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jul 2026 19:37:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>Log In - Buildverse</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0f2fe, #7dd3fc);
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        
+        p, label, input {
+            font-family: "Arial", sans-serif;
+        }
+
+        /* Using a table cuz its simpler than some css shi */
+        .logo-table {
+            width: 100%;
+            height: 140px; 
+            background-color: #7dd3fc;
+            border-collapse: collapse;
+            border: none;
+            margin: 0;
+        }
+        .logo-table td {
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        .logo {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: fill; 
+        }
+
+        /* Bar Le Navigation */
+        .nav-bar {
+            background-color: #005b94;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Login Layout */
+        .main-layout {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container {
+            width: 350px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .input-field {
+            width: 92%;
+            padding: 8px;
+            border: 1px solid #999999;
+            font-family: "Arial", sans-serif;
+        }
+
+        .login-btn {
+            background-color: #005b94;
+            color: #ffffff;
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: "Arial", sans-serif;
+        }
+
+        .login-btn:hover {
+            background-color: #003f69;
+        }
+
+        .error-message {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 13px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Le Logo -->
+    <table class="logo-table">
+        <tr>
+            <td>
+                <a href="index-2.html"><img src="logo.png" alt="BUILDVERSE" class="logo"></a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="nav-bar">
+        <a href="register.html">SIGN UP</a> - 
+        <a href="login.html">LOG IN</a> - 
+        <a href="login.html">GAMES</a> - 
+        <a href="https://buildverse.boards.net/">FORUM</a> - 
+        <a href="users.html">USERS</a>
+    </div>
+
+    <div class="main-layout">
+        <h1>Log in to your account</h1>
+        
+        <div class="login-container">
+            <form method="post" action="https://buildverze.com/login.aspx" id="LoginForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hR5G5fkIjf41c5/8awnK/JUKepsD3XLZIbrn0sgUvwEhsBxlZTadU37p0U1OsH+Kpr2lGB8kAveiObxnwLN+1vmwi1IXSzugiUJKRp11yc8=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="JLW6dNHCjc4uKvZBLajBD+TmEjFplaG4kW108lzxukSbvdu/C+LEzNx+I0R9ffFb3V91LSp7R2eZligkVR2f0rLUXxf8fH7sqMsHqtFESbnl/6A6p/ZOfnZDiRc0UTtLBUQMFJIMUGstlniyDa1aWmhh7zuRU1ksoAp4iaiKYzk=" />
+</div>
+                <div class="input-group">
+                    <label for="txtUser">Username:</label>
+                    <input name="txtUser" type="text" maxlength="20" id="txtUser" class="input-field" />
+                </div>
+                
+                <div class="input-group">
+                    <label for="txtPass">Password:</label>
+                    <input name="txtPass" type="password" id="txtPass" class="input-field" />
+                </div>
+                
+                <input type="submit" name="btnLogin" value="Sign In" id="btnLogin" class="login-btn" />
+                
+                <p>
+                    <span id="lblError" class="error-message" style="color:Red;"></span>
+                </p>
+            </form>
+            
+            <p style="font-size: 12px; margin-top: 20px;">
+                Don't have an account? <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </div>
+<h1><span style="visibility: hidden;">.</span></h1>
+<h1><span style="visibility: hidden;">.</span></h1>
+<h1><span style="visibility: hidden;">.</span></h1>
+</body>
+
+<!-- Mirrored from buildverze.com/login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jul 2026 19:37:36 GMT -->
+</html>

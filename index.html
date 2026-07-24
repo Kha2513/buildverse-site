@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from buildverze.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jul 2026 19:37:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Buildverse!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0f2fe, #7dd3fc);
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        /* messing around with the font */
+        p {
+            font-family: "Arial", sans-serif;
+        }
+
+        /* Using a table cuz its simpler than some css shi */
+        .logo-table {
+            width: 100%;
+            height: 140px; 
+            background-color: #7dd3fc;
+            border-collapse: collapse;
+            border: none;
+            margin: 0;
+        }
+
+        .logo-table td {
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* The logog is a png so yk */
+        .logo {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: fill; 
+        }
+
+        /* Bar Le Navigation */
+        .nav-bar {
+            background-color: #005b94;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+        }
+
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Layout */
+        .main-layout {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left-content {
+            width: 60%;
+            float: left;
+        }
+
+        .right-content {
+            width: 35%;
+            float: right;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* ONLY this header uses Comic Sans MS */
+        h1 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .user-count {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        /* le gifs */
+        .features-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            max-width: 450px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 60px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Le buttons */
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        .action-button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .action-button img {
+            width: 200px;
+            height: auto;
+        }
+
+        .platform-info {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        .platform-info span {
+            font-size: 11px;
+            display: block;
+            color: #333333;
+        }
+
+        /* Char image */
+        .character-avatar {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Clearfix for layout le float */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="https://buildverze.com/" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="AIU/pXbXWgnW1r+dWlbgHIHCVdlaQCmJhBa2lU+Ax5/zsRrOmexfLtLTpur1cbTAw2eJf6OsYSBeerl2P18W4NoxB37R8Ii76KOLJ8qj3mILpMK0nzW+Y481bFyyrx9v" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+        <!-- Le Logo -->
+        <table class="logo-table">
+            <tr>
+                <td>
+                    <a href="default.html"><img src="logo.png" alt="BUILDVERSE" class="logo"></a>
+                </td>
+            </tr>
+        </table>
+
+        <div class="nav-bar">
+            <a href="register.html">SIGN UP</a> - 
+            <a href="login.html">LOG IN</a> - 
+            <a href="login.html">GAMES</a> - 
+            <a href="https://buildverse.boards.net/">FORUM</a> - 
+            <a href="users.html">USERS</a>
+        </div>
+
+        <div class="main-layout clearfix">
+            
+            <div class="left-content">
+                <h1>Welcome to Buildverse!</h1>
+                
+                <p class="user-count">an online platform with <span id="lblUserCount">90</span> Users!</p>
+
+                <div class="features-row">
+                    <div class="feature-item">
+                        <img src="icon_friends.svg" alt="Meet friends!" class="feature-icon">
+                    </div>
+                    <div class="feature-item">
+                        <img src="icon_hammer.svg" alt="Make Games!" class="feature-icon">
+                    </div>
+                    <div class="feature-item">
+                        <img src="icon_free.svg" alt="Buildverse is free!" class="feature-icon">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <a href="login.html" class="action-button">
+                        <img src="btn_download_client.svg" alt="Download Buildverse Here!">
+                    </a>
+                    <a href="login.html" class="action-button">
+                        <img src="btn_download_builder.svg" alt="Download Game Builder Here!">
+                    </a>
+                </div>
+
+                <div class="button-container">
+                    <a href="login.html" class="action-button">
+                        <img src="btn_play_minigames.svg" alt="Play Minigames! Beta">
+                    </a>
+                </div>
+
+                <p class="platform-info">
+                    Buildverse is available for:
+                    <span style="font-size: 11px; display: block; color: #333333;">Windows</span>
+                </p>
+            </div>
+
+            <div class="right-content">
+                <img src="character.svg" alt="Buildverse Character" class="character-avatar">
+            </div>
+
+        </div>
+    </form>
+.
+</body>
+
+<!-- Mirrored from buildverze.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jul 2026 19:37:35 GMT -->
+</html>
